@@ -85,7 +85,7 @@ class Maoyan():
         director = director[0].strip()
         #print(director)
         
-        pattern4 = re.compile('票房详情.*?film-mbox-item.*?film-mbox-item">.*?>(.*?)</div>', re.S)
+        pattern4 = re.compile('首周票房.*?film-mbox-item">.*?>(.*?)</div>', re.S)
         
         income = re.findall(pattern4, resp.text)
         if income == []:
